@@ -28,10 +28,24 @@ int main()
 			std::cout << "Age cannot be negative!\n";
 			continue;
 		}
-		
+
 		break;
 	}
-	std::cout << std::format("Hello, {}. You are {} years old.", name, age); // std::format needs C++20 or newer
+	if (age < 25)
+	{
+		std::cout << std::format(
+			"Hello {}, you are only {} years old.\n", name, age);
+	}
+	else if (age < 50)
+	{
+		std::cout << std::format(
+			"Hello {}, you are already {} years old.\n", name, age);
+	}
+	else
+	{
+		std::cout << std::format(
+			"Hello {}. You are very wise for your age.\n", name);
+	}
 
 
 }
