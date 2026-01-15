@@ -33,18 +33,15 @@ int main()
 	}
 	if (age < 25)
 	{
-		std::cout << std::format(
-			"Hello {}, you are only {} years old.\n", name, age);
+		std::cout << std::format("Hello {}, you are only {} years old.\n", name, age);
 	}
 	else if (age < 50)
 	{
-		std::cout << std::format(
-			"Hello {}, you are already {} years old.\n", name, age);
+		std::cout << std::format("Hello {}, you are already {} years old.\n", name, age);
 	}
 	else
 	{
-		std::cout << std::format(
-			"Hello {}. You are very wise for your age.\n", name);
+		std::cout << std::format("Hello {}. You are very wise for your age.\n", name);
 	}
 
 
